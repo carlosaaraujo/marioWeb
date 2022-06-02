@@ -16,6 +16,19 @@
     background: linear-gradient(#87CEEB, #E0F6FF);
 }
 
+.clouds {
+    position: absolute;
+    width: 550px;
+    animation: clouds-animation 15s infinite linear;
+}
+
+.mario {
+    position: absolute;
+    width: 150px;
+    bottom: 0;
+    z-index: 7;
+}
+
 .pipe {
     position: absolute;
     bottom: 0;
@@ -23,21 +36,8 @@
     animation: pipe-animation 1.5s infinite linear;
 }
 
-.mario {
-    width: 150px;
-    position: absolute;
-    bottom: 0;
-}
-
 .jump {
     animation: jump 500ms ease-out;
-}
-
-.clouds {
-    position: absolute;
-    width: 550px;
-
-    animation: clouds-animation 15s infinite linear;
 }
 
 @keyframes pipe-animation {
