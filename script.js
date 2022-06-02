@@ -19,8 +19,6 @@ const loop = setInterval(() => {
 		.getComputedStyle(pegarNuvem)
 		.right.replace("px", " ");
 
-	console.log(posicaoNuvem);
-
 	if (posicaoPipe <= 120 && posicaoPipe > 0 && posicaoMario < 80) {
 		pegarPipe.style.animation = "none";
 		pegarPipe.style.left = `${posicaoPipe}px`;
